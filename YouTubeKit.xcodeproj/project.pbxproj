@@ -399,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90BC2C6970A6EB0C636E0DAF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -417,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 119618046A48C1479D7EF29D /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
