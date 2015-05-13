@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C69C77160930D81A870762 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3BC40D29E2513E76AF7FEB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A8B2798A1B037CF900C59996 /* YouTubeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B279891B037CF900C59996 /* YouTubeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8B279901B037CF900C59996 /* YouTubeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B279841B037CF900C59996 /* YouTubeKit.framework */; };
 		A8B279971B037CF900C59996 /* YouTubeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B279961B037CF900C59996 /* YouTubeKitTests.swift */; };
+		A8B279A41B03810300C59996 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B279A01B03810300C59996 /* API.swift */; };
+		A8B279A51B03810300C59996 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B279A11B03810300C59996 /* Client.swift */; };
+		A8B279A61B03810300C59996 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B279A21B03810300C59996 /* Item.swift */; };
+		A8B279A71B03810300C59996 /* YouTubeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B279A31B03810300C59996 /* YouTubeKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		119618046A48C1479D7EF29D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2D3BC40D29E2513E76AF7FEB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90BC2C6970A6EB0C636E0DAF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B279841B037CF900C59996 /* YouTubeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B279881B037CF900C59996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B279891B037CF900C59996 /* YouTubeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeKit.h; sourceTree = "<group>"; };
 		A8B2798F1B037CF900C59996 /* YouTubeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B279951B037CF900C59996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B279961B037CF900C59996 /* YouTubeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeKitTests.swift; sourceTree = "<group>"; };
+		A8B279A01B03810300C59996 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A8B279A11B03810300C59996 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A8B279A21B03810300C59996 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A8B279A31B03810300C59996 /* YouTubeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C69C77160930D81A870762 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB75EC416932EB25297B78B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90BC2C6970A6EB0C636E0DAF /* Pods.debug.xcconfig */,
+				119618046A48C1479D7EF29D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A8B2797A1B037CF900C59996 = {
 			isa = PBXGroup;
 			children = (
 				A8B279861B037CF900C59996 /* YouTubeKit */,
 				A8B279931B037CF900C59996 /* YouTubeKitTests */,
 				A8B279851B037CF900C59996 /* Products */,
+				1AB75EC416932EB25297B78B /* Pods */,
+				FD70BA0F2CB03ACB7C59CF60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +95,10 @@
 		A8B279861B037CF900C59996 /* YouTubeKit */ = {
 			isa = PBXGroup;
 			children = (
+				A8B279A01B03810300C59996 /* API.swift */,
+				A8B279A11B03810300C59996 /* Client.swift */,
+				A8B279A21B03810300C59996 /* Item.swift */,
+				A8B279A31B03810300C59996 /* YouTubeKit.swift */,
 				A8B279891B037CF900C59996 /* YouTubeKit.h */,
 				A8B279871B037CF900C59996 /* Supporting Files */,
 			);
@@ -102,6 +130,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD70BA0F2CB03ACB7C59CF60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D3BC40D29E2513E76AF7FEB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,10 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8B2799A1B037CF900C59996 /* Build configuration list for PBXNativeTarget "YouTubeKit" */;
 			buildPhases = (
+				9E1B278A59E21650CABE9F7F /* Check Pods Manifest.lock */,
 				A8B2797F1B037CF900C59996 /* Sources */,
 				A8B279801B037CF900C59996 /* Frameworks */,
 				A8B279811B037CF900C59996 /* Headers */,
 				A8B279821B037CF900C59996 /* Resources */,
+				7755A75D8350C1191BAADCE3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,11 +242,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7755A75D8350C1191BAADCE3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1B278A59E21650CABE9F7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8B2797F1B037CF900C59996 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B279A71B03810300C59996 /* YouTubeKit.swift in Sources */,
+				A8B279A51B03810300C59996 /* Client.swift in Sources */,
+				A8B279A61B03810300C59996 /* Item.swift in Sources */,
+				A8B279A41B03810300C59996 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +397,9 @@
 		};
 		A8B2799B1B037CF900C59996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90BC2C6970A6EB0C636E0DAF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +409,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A8B2799C1B037CF900C59996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 119618046A48C1479D7EF29D /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +479,7 @@
 				A8B2799C1B037CF900C59996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8B2799D1B037CF900C59996 /* Build configuration list for PBXNativeTarget "YouTubeKitTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +488,7 @@
 				A8B2799F1B037CF900C59996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
