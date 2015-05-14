@@ -37,6 +37,10 @@ public func videos(#parameters: [String: String], handler: (Result<(page: Page, 
     Client.sharedInstance.videos(parameters: parameters, handler: handler)
 }
 
+public func playlists(#parameters: [String: String], handler: (Result<[Playlist], NSError>) -> Void) {
+    Client.sharedInstance.find(parameters: parameters, handler: handler)
+}
+
 public func channels(#parameters: [String: String], handler: (Result<(page: Page, channels: [Channel]), NSError>) -> Void) {
     Client.sharedInstance.channels(parameters: parameters, handler: handler)
 }
