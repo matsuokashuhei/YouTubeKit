@@ -283,8 +283,16 @@ public struct Error {
     let message: String!
     init?(JSON: NSDictionary) {
         if let error = JSON["error"] as? NSDictionary {
-            code = error["code"] as! Int
-            message = error["message"] as! String
+            if let code = error["code"] as? Int {
+                self.code = code
+            } else {
+                self.code = 99999
+            }
+            if let message = error["message"] as? String {
+                self.message = message
+            } else {
+                self.message = ""
+            }
         } else {
             return nil
         }
